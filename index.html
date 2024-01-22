@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMORIES</title>
+    <link rel="stylesheet" href="./index.css"/>
+  </head>
+  <body style="background-color: #e1f9fd">
+    <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">MEMORIES</h1>
+
+    <a href="main.html"><button id="btn1" onclick style="font-size: 25px; background-color: #0095ff; color:whitesmoke; border-radius: 5px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">HOME</button></a>
+    <input 
+      type="file" 
+      class="inputFile" 
+      id="fileInp"
+      onchange="getFile(event)"
+      accept="image/png, image/jpeg"
+    />
+    <label for="fileInp">+</label> 
+    <span class="fileText"></span>
+    <button onclick style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;";="uploadImage()">UPLOAD IMAGE</button>
+    <div class="bar">
+      <div class="progress"></div>
+    </div>
+    <div class="uploadPercentage">0%</div>
+    
+    <div class="imageUploaded">
+        <img alt="" class="img" />
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
